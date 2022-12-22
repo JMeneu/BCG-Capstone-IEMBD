@@ -12,7 +12,7 @@ Welcome on board! This project includes a full Jupyter Notebook report to predic
 
 ## 2. Results
 
-* `F1-Score`: 14.2%
+* `F1-Score`: 
 
 
 
