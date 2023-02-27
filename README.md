@@ -69,7 +69,7 @@ In this aspect:
 <img width="1000" style="float:center" 
      src="https://i.imgur.com/ldpdrIn.png" />
 
-<a name="Footnote" >1</a>: _Schema of the `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb` pipeline
+<a name="Footnote" >1</a>: _Schema of the `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb` pipeline_
 
 The following Notebook consists on the following:
 
