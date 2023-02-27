@@ -1,0 +1,16 @@
+jupyter
+pandas
+numpy
+matplotlib
+plotly
+seaborn
+plotnine
+scikitplot
+statsmodels
+scipy
+lifetimes
+scikit-learn
+prophet
+lime
+abc_analysis
+mlxtend
