@@ -14,8 +14,12 @@ This repository contains a **complete assesment** on **Client Co®'s** context, 
 To achieve such task, the repository presents three concurrent analysis:
 
 * `EDA, Customer Segmentations & Spend Propensity`: shows the core segmentation of clients, according to the RFM Analysis. Showcases predictions for the following month spenders. Leverages `lime` package to bring explainability to the predictive model.
-* `Sales Forescasting`: presents a prediction on the total sales of ClientCo over the next 9 weeks, using weekly sales to avoid daily fluctuations. The forecast leverages `Facebook Prophet`, with a two-level time series approach: forecasting total sales of ClientCo and for customer segments based on RFM. 
+
 * `Product Analysis & Customer Lifetime Value`: covers Product Association Rules and Customer Lifetime Value. In more detail, tackles a refunds analysis, product segmentation, CLV modeling using RFM anda Gamma Gamma Model. The top 100 selling products of 2019 are analyzed using association rules with an Apriori model.
+
+
+* `Sales Forecasting`: presents a prediction on the total sales of ClientCo over the next 9 weeks, using weekly sales to avoid daily fluctuations. The forecast leverages `Facebook Prophet`, with a two-level time series approach: forecasting total sales of ClientCo and for customer segments based on RFM. 
+
 
 > Note: The insights from each perspective are clearly detailed in both `.ipynb` and `.html` formats. The first is a standard in the field, whereas the second one eases a quick view to the reader.
 
@@ -57,7 +61,7 @@ In this aspect:
 
 
 1. `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb`
-2. `Sales_Forecast_9Weeks_Final.ipynb`
+2. `Time Series Forecast - Total Sales 9 Weeks.ipynb`
 3. `Product_analysis_and_CLV.ipynb`
 
 
@@ -71,42 +75,22 @@ In this aspect:
 
 <a name="Footnote" >1</a>: _Schema of the `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb` pipeline_
 
-The following Notebook consists on:
+The following Notebook covers:
 
-1. Exploratory Data Analysis (EDA), which set the basis for customer segmentation and modeling.
-2. Customer Segmentation using RFM technique.
-3. Spend Propensity Model.
+1. Exploratory Data Analysis, the base of the customer's segmentation and modeling. In essence, the nuances of the data provided and deep analysis of it.
+2. Customer Segmentation using RFM technique, segmenting clients into 6 segments based on the computed RFM score.
+3. Spend Propensity Model, tested both Logistic Regression and RandomForestClassifier. The first one, intended towards bringing explainability to the model, and the swcond, being the most perfomant.
+4. Based on the above, the notebook showcases & visualises certain recommendations for the business, giving answers to some business questions based on the above modeling and segmentation. In addition, a basic graph analysis between branches and customers was also performed.
 
 Those three pillars deliver core recommendations to the business, based on those data-driven analysis. 
 
-### 3.2. Sales Forescasting | `Sales_Forecast_9Weeks_Final.ipynb`
 
-<img width="1000" style="float:center" 
-     src="https://i.imgur.com/iZU7Ig0.png" />
-<a name="Footnote" >2</a>: _Schema of the `Sales_Forecast_9Weeks_Final.ipynb`` pipeline_
-
-The following Notebook covers our approach on predicting the total sales of `ClientCo` in the next 9 weeks period (22 September 2019 - 22 November 2019). 
-
-* We are using weekly sales to avoid daily fluctuation with the weekend sales being negligible.
-
-* We are building a Time Series Forecast on two levels: 
-  1. Forecast of total sales of `ClientCo`
-  2. Forecast of the 6 different customer segments we have developed using RFM.
-
-* For the forecast we are using `Facebook Prophet`, the open source software released by Facebook's core Data Science Team. We chose this model due to the following reasons:
-  1. It performs well with time series that have strong seasonal effects and several seasons of historical data. 
-  2. It is also robust to missing data and shifts in the trend
-  3. It can handle outliers.
- 
-* For evaluating our forecast we are using `MAPE` and `MAE` score, which are popular metrics when evaluating forecasting models.
-
-
-### 3.3. Product Analysis & Customer Lifetime Value | `Product_analysis_and_CLV.ipynb`
+### 3.2. Product Analysis & Customer Lifetime Value | `Product_analysis_and_CLV.ipynb`
 
 
 <img width="1000" style="float:center" 
      src="https://i.imgur.com/i4acMrR.png" />
-<a name="Footnote" >3</a>: _Schema of the `Product_analysis_and_CLV.ipynb`_
+<a name="Footnote" >2</a>: _Schema of the `Product_analysis_and_CLV.ipynb`_
 
 
 The following Notebook contains the code used for Product Association Rules and Customer Lifetimes Value. From it, we highlight the following sections: 
@@ -134,13 +118,52 @@ The following Notebook contains the code used for Product Association Rules and 
 10. Data Saving (Only Run after all models have been executed)
 
 
-## 4. Results and Recommendations
+
+### 3.3. Sales Forescasting | `Time Series Forecast - Total Sales 9 Weeks.ipynb`
+
+<img width="1000" style="float:center" 
+     src="https://i.imgur.com/iZU7Ig0.png" />
+<a name="Footnote" >3</a>: _Schema of the `Sales_Forecast_9Weeks_Final.ipynb`` pipeline_
+
+The following Notebook covers our approach on predicting the total sales of `ClientCo` in the next 9 weeks period (22 September 2019 - 22 November 2019). 
+
+* We are using weekly sales to avoid daily fluctuation with the weekend sales being negligible.
+
+* We are building a Time Series Forecast on two levels: 
+  1. Forecast of total sales of `ClientCo`
+  2. Forecast of the 6 different customer segments we have developed using RFM.
+
+* For the forecast we are using `Facebook Prophet`, the open source software released by Facebook's core Data Science Team. We chose this model due to the following reasons:
+  1. It performs well with time series that have strong seasonal effects and several seasons of historical data. 
+  2. It is also robust to missing data and shifts in the trend
+  3. It can handle outliers.
+ 
+* For evaluating our forecast we are using `MAPE` and `MAE` score, which are popular metrics when evaluating forecasting models.
 
 
-## 5. References
 
-For more information on the techniques and methods used in these notebooks, please refer to the following references:
 
-- Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow
-- Python Data Science Handbook
-- Forecasting: Principles and Practice
+## 4. References
+
+For more information on the techniques and methods used in these notebooks, please refer to the following:
+
+
+[1] Harsh. "Association Analysis in Python: Frequent Item set Mining using Apriori algorithm in Python." Analytics Vidhya, 26 Sep. 2019, https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-association-rules/ 
+
+[2] Logunova, I. (2022, June 9). A Beginner's Guide to Data Mining Techniques. Serokell. https://serokell.io/blog/guide-to-data-mining-techniques 
+
+[3] Antonio, Meraldo. "Modeling Customer Lifetime Values with Lifetimes." Towards Data Science, 24 Mar. 2022, towardsdatascience.com/modeling-customer-lifetime-values-with-lifetimes-4d6df4b6c160 
+
+[4] Onnen, Heiko. "Buy 'Til You Die: Predict Customer Lifetime Value in Python." Towards Data Science, 27 Nov. 2021, towardsdatascience.com/buy-til-you-die-predict-customer-lifetime-value-in-python-7bf87a28fc20 
+
+[5] Fader, Peter S., Bruce G.S. Hardie, and Ka Lok Lee. "RFM and CLV: Using iso-value curves for customer base analysis." Journal of Marketing Research 50.4 (2013): 444-456 
+
+[6] Raschka, Sebastian. "Mining Frequent Itemsets with Support and Confidence Using Python." Sebastian Raschka, 7 Mar. 2018, https://sebastianraschka.com/Articles/2014_python_apriori.html 
+
+[7] Davidson-Pilon, C. (2020). Lifetimes: Easily estimate customer lifetime value. https://github.com/CamDavidsonPilon/lifetimes 
+
+[8] Mathur, V. (2022, September 26). Association Rule Mining: Importance and Steps. Analytics Steps. https://www.analyticssteps.com/blogs/association-rule-mining-importance-and-steps
+
+[9] Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow
+
+[10] Python Data Science Handbook
