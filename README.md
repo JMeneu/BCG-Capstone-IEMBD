@@ -66,7 +66,7 @@ In this aspect:
 
 ### 3.1. EDA, Customer Segmentations & Spend Propensity | `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb`
 
-<img width="600" style="float:center" 
+<img width="1000" style="float:center" 
      src="https://i.imgur.com/ldpdrIn.png" />
 
 <a name="Footnote" >1</a>: _Schema of the `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb` pipeline
