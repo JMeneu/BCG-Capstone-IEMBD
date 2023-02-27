@@ -123,7 +123,7 @@ The following Notebook contains the code used for Product Association Rules and 
 
 <img width="1000" style="float:center" 
      src="https://i.imgur.com/iZU7Ig0.png" />
-<a name="Footnote" >3</a>: _Schema of the `Sales_Forecast_9Weeks_Final.ipynb`` pipeline_
+<a name="Footnote" >3</a>: _Schema of the `Time Series Forecast - Total Sales 9 Weeks.ipynb` pipeline_
 
 The following Notebook covers our approach on predicting the total sales of `ClientCo` in the next 9 weeks period (22 September 2019 - 22 November 2019). 
 
