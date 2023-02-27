@@ -52,17 +52,17 @@ The insights and findings obtained from the above explorations, will be merged i
 
 ## 3. Code Documentation
 
-## 3.1. EDA, Customer Segmentations & Spend Propensity | `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb`
+### 3.1. EDA, Customer Segmentations & Spend Propensity | `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb`
 
-## 3.2. Sales Forescasting | `Sales_Forecast_9Weeks_Final.ipynb`
+### 3.2. Sales Forescasting | `Sales_Forecast_9Weeks_Final.ipynb`
 
-## 3.3. Product Analysis & Customer Lifetime Value | `Product_analysis_and_CLV.ipynb`
-
-
-# 4. Results and Recommendations
+### 3.3. Product Analysis & Customer Lifetime Value | `Product_analysis_and_CLV.ipynb`
 
 
-# 5. References
+## 4. Results and Recommendations
+
+
+## 5. References
 
 For more information on the techniques and methods used in these notebooks, please refer to the following references:
 
