@@ -164,6 +164,6 @@ For more information on the techniques and methods used in these notebooks, plea
 
 [8] Mathur, V. (2022, September 26). Association Rule Mining: Importance and Steps. Analytics Steps. https://www.analyticssteps.com/blogs/association-rule-mining-importance-and-steps
 
-[9] Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow
+[9] Geron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow. O'Reilly Media.
 
-[10] Python Data Science Handbook
+[10] VanderPlas, J. (2016). Python Data Science Handbook. O'Reilly Media.
