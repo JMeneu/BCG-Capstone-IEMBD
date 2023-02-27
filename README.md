@@ -1,8 +1,9 @@
 _MBD @IE_
+
 _Group 1_
 
 <img width="300" style="float:center" 
-     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/BCG_Corporate_Logo.svg/2048px-BCG_Corporate_Logo.svg.png" />
+     src="https://logos-world.net/wp-content/uploads/2022/06/BGG-Logo.png" />
 
 # BCG Capstone Project - Documentation
 
@@ -47,17 +48,15 @@ The insights and findings obtained from the above explorations, will be merged i
 > Note: The required versions for each each are defined in `requirements.txt`
 
 
-## 2. Dependencies
+## 2. Quick Guide 
 
-## 3. Documentation
+## 3. Code Documentation
 
 ## 3.1. EDA, Customer Segmentations & Spend Propensity | `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb`
 
 ## 3.2. Sales Forescasting | `Sales_Forecast_9Weeks_Final.ipynb`
 
 ## 3.3. Product Analysis & Customer Lifetime Value | `Product_analysis_and_CLV.ipynb`
-
-
 
 
 # 4. Results and Recommendations
