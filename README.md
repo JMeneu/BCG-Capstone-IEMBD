@@ -1,32 +1,72 @@
+_MBD @IE_
+_Group 1_
+
 <img width="300" style="float:center" 
-     src="https://i.imgur.com/AkRNJof.png" />
+     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/BCG_Corporate_Logo.svg/2048px-BCG_Corporate_Logo.svg.png" />
+
+# BCG Capstone Project - Documentation
+
+## Abstract
+
+This repository contains a **complete assesment** on **Client Co®'s** context, trends and predictions. The **analysis** covers different perspectives, in order to bring about a **concise** and **data-driven** set of solutions and recommendations to the end-client.
+
+To achieve such task, the repository presents three concurrent analysis:
+
+* `EDA, Customer Segmentations & Spend Propensity`: 
+* `Sales Forescasting`: 
+* `Product Analysis & Customer Lifetime Value`: 
+
+The insights and findings obtained from the above explorations, will be merged into a set of final recommendations for the client, ClientCo®.
+
+
+## 1. Dependencies
+
+- **Python 3.x**
+- **Jupyter Notebook**: `pip install jupyter`
+- **Pandas:** `pip install pandas`
+- **Numpy:** `pip install numpy`
+- **Matplotlib:** `pip install matplotlib.pyplot`
+- **Plotly:** `pip install plotly`
+- **Seaborn:** `pip install seaborn`
+- **Plotnine:** `pip install plotnine`
+- **ScikitPlot:** `pip install scikitplot`
+- **Statsmodels:** `pip install statsmodels`
+- **ScyPy:** `pip install scypy`
+- **Lifetimes:** `pip install lifetimes`
+- **Scikit Learn:** `pip install sklearn`
+- **Prophet:** `pip install prophet`
+- **Lime:** `pip install lime`
+- **Abc Analysis:** `pip install abc_analysis`
+- **Mlxtend:** `pip install mlxtend`
+- **Itertools:** `pip install itertools`
+- **Collections:** `pip install collections`
+- **Networkx:** `pip install networkx`
+- **Pickle:** `pip install pickle`
+
+
+> Note: The required versions for each each are defined in `requirements.txt`
+
+
+## 2. Dependencies
+
+## 3. Documentation
+
+## 3.1. EDA, Customer Segmentations & Spend Propensity | `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb`
+
+## 3.2. Sales Forescasting | `Sales_Forecast_9Weeks_Final.ipynb`
+
+## 3.3. Product Analysis & Customer Lifetime Value | `Product_analysis_and_CLV.ipynb`
 
 
 
-# mlClassification - IE MBD Capstone Project
-#### _Churn Definition & Prediction for ClientCo®_
 
-## 1. Introduction
-
-Welcome on board! The end of this `notebook` is to define `Churn` in ClientCo® clients based on the predictions obtained from a combinaitons of analysis and models:
-
-`Trend Analysis` | `RFM Analysis`| `CLV` | `K-Means`| `Isolation Forest` 
-
-After the analysis a `Classification` Machine Learning model will be implemented, to predict expected Churn.
+# 4. Results and Recommendations
 
 
+# 5. References
 
-_+ Info:_ <https://blackboard.ie.edu/ultra/courses/_46938_1/outline/file/_683290_1>
+For more information on the techniques and methods used in these notebooks, please refer to the following references:
 
-## 2. Results
-
-* `Accuracy`: 82.3%
-
-
-
-
-
-
-
-
-
+- Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow
+- Python Data Science Handbook
+- Forecasting: Principles and Practice
