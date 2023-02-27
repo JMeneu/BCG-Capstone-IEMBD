@@ -13,9 +13,9 @@ This repository contains a **complete assesment** on **Client Co®'s** context, 
 
 To achieve such task, the repository presents three concurrent analysis:
 
-* `EDA, Customer Segmentations & Spend Propensity`: 
-* `Sales Forescasting`: 
-* `Product Analysis & Customer Lifetime Value`: 
+* `EDA, Customer Segmentations & Spend Propensity`: shows the core segmentation of clients, according to the RFM Analysis. Showcases predictions for the following month spenders. Leverages `lime` package to bring explainability to the predictive model.
+* `Sales Forescasting`: presents a prediction on the total sales of ClientCo over the next 9 weeks, using weekly sales to avoid daily fluctuations. The forecast leverages `Facebook Prophet`, with a two-level time series approach: forecasting total sales of ClientCo and for customer segments based on RFM. 
+* `Product Analysis & Customer Lifetime Value`: covers Product Association Rules and Customer Lifetime Value. In more detail, tackles a refunds analysis, product segmentation, CLV modeling using RFM anda Gamma Gamma Model. The top 100 selling products of 2019 are analyzed using association rules with an Apriori model.
 
 > Note: The insights from each perspective are clearly detailed in both `.ipynb` and `.html` formats. The first is a standard in the field, whereas the second one eases a quick view to the reader.
 
@@ -67,11 +67,11 @@ In this aspect:
 ### 3.1. EDA, Customer Segmentations & Spend Propensity | `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb`
 
 <img width="1000" style="float:center" 
-     src="https://i.imgur.com/ldpdrIn.png" />
+     src="https://i.imgur.com/lPDjAmj.png" />
 
 <a name="Footnote" >1</a>: _Schema of the `EDA, Customer Segmentation, Spend Propensity, Recommendations.ipynb` pipeline_
 
-The following Notebook consists on the following:
+The following Notebook consists on:
 
 1. Exploratory Data Analysis (EDA), which set the basis for customer segmentation and modeling.
 2. Customer Segmentation using RFM technique.
@@ -81,9 +81,33 @@ Those three pillars deliver core recommendations to the business, based on those
 
 ### 3.2. Sales Forescasting | `Sales_Forecast_9Weeks_Final.ipynb`
 
+<img width="1000" style="float:center" 
+     src="https://i.imgur.com/iZU7Ig0.png" />
+<a name="Footnote" >2</a>: _Schema of the `Sales_Forecast_9Weeks_Final.ipynb`` pipeline_
+
+The following Notebook covers our approach on predicting the total sales of `ClientCo` in the next 9 weeks period (22 September 2019 - 22 November 2019). 
+
+* We are using weekly sales to avoid daily fluctuation with the weekend sales being negligible.
+
+* We are building a Time Series Forecast on two levels: 
+  1. Forecast of total sales of `ClientCo`
+  2. Forecast of the 6 different customer segments we have developed using RFM.
+
+* For the forecast we are using `Facebook Prophet`, the open source software released by Facebook's core Data Science Team. We chose this model due to the following reasons:
+  1. It performs well with time series that have strong seasonal effects and several seasons of historical data. 
+  2. It is also robust to missing data and shifts in the trend
+  3. It can handle outliers.
+ 
+* For evaluating our forecast we are using `MAPE` and `MAE` score, which are popular metrics when evaluating forecasting models.
 
 
 ### 3.3. Product Analysis & Customer Lifetime Value | `Product_analysis_and_CLV.ipynb`
+
+
+<img width="1000" style="float:center" 
+     src="https://i.imgur.com/i4acMrR.png" />
+<a name="Footnote" >3</a>: _Schema of the `Product_analysis_and_CLV.ipynb`_
+
 
 The following Notebook contains the code used for Product Association Rules and Customer Lifetimes Value. From it, we highlight the following sections: 
 
