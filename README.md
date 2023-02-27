@@ -1,6 +1,4 @@
-_MBD @IE_
-
-_Group 1_
+_MBD @IE - Group 1_
 
 <img width="300" style="float:center" 
      src="https://logos-world.net/wp-content/uploads/2022/06/BGG-Logo.png" />
